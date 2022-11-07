@@ -6,10 +6,14 @@ int numberN = Convert.ToInt32(Console.ReadLine());
 
 void AllCubes(int number)
 {
-    for (int i = 1; i <= number; i++)
+    if (number > 1)
     {
+        for (int i = 1; i <= number; i++)
+        {
         int result = i * i * i;
         Console.Write($"{result}, ");
+        }
     }
+    else Console.WriteLine("Для списка кубов от 1 до N нужно целое число N больше 1");
 }
 AllCubes(numberN);
