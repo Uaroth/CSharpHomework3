@@ -6,7 +6,7 @@ string number = Console.ReadLine();
 
 void PalCheck(string number)
 {
-    if (number.Length > 3 && number.Length < 5)
+    if (number.Length == 5)
     {
         if (number[0] == number[4] && number[1] == number[3])
         {
@@ -14,6 +14,6 @@ void PalCheck(string number)
         }
         else Console.WriteLine("Это не палиндром");
     }
-    else Console.WriteLine("Здесь больше пяти знаков");
+    else Console.WriteLine("Здесь не пять знаков");
 }
 PalCheck(number);
